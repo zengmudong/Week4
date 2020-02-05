@@ -1,0 +1,65 @@
+---
+title: "Activity: Graphical Exploration"
+author: "YOUR NAME HERE"
+date: "Due Date: "
+output: html_notebook
+---
+
+
+
+## Front Matter
+
+Install supporting R packages with necessary functions and data sets.  You will need to add `library(DataComputing)` to the code chunk.  Note the line `rm(list = ls())` at the beginning of the code chunk, this will effectively reset your R environment which can help avoid bugs when an analysis gets more complicated.  
+
+
+```{r} 
+rm(list = ls())      # cleans up your R environment
+
+# load packages
+library(mosaic)
+library(tidyverse)   # loads a group of useful packages including `ggplot2`
+
+
+```
+
+
+
+### Explore the `diamonds` data
+
+*Task: Use R to produce one informative graphic of the `diamonds` data.  The graphic should represent AT LEAST 3 variables.  Write a few sentences to describe what we can learn from the graphic your have provided.  (Note: do NOT write your narrative inside the code chunk.)*
+
+
+```{r}
+# read `diamonds` data into R; it has been provided by the `ggplot2` package
+data("diamonds", package = "ggplot2")
+
+# add your code below for your one key data visualization
+
+
+```
+
+
+
+### Explore the cereal data
+
+*Task: Use R to produce one informative graphic of the `cereal.csv` data.  The graphic should represent AT LEAST 3 variables.  Write a few sentences to describe what we can learn from the graphic your have provided. (Note: do NOT write your narrative inside the code chunk.)*
+
+
+```{r}
+# read CSV data set into R
+CerealData <- read_csv(file = "cereal.csv")  
+
+# add your code below for your one key data visualization
+
+
+```
+
+
+
+
+
+### Extension: programming style
+
+The helper functions are great, but they produce ugly code.  Clean up the `ggplot2` code that reproduces the required plots so that it aligns with the R Programming Style Guide Appendix in the *DataComputing* eBook <https://dtkaplan.github.io/DataComputingEbook/>.  
+
+
